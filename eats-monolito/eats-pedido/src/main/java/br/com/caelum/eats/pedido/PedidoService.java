@@ -11,6 +11,7 @@ public class PedidoService {
 
 	private PedidoRepository repo;
 	
+	
 	public Pedido porIdComItens(Long pedidoId) {
 		return repo.porIdComItens(pedidoId).orElseThrow(ResourceNotFoundException::new);
 	}
